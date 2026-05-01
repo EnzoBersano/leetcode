@@ -14,8 +14,8 @@ Result can be returned in any order.
 
 SELECT p.product_name, s.year, s.price
 FROM Sales s
-         JOIN Product p
-              ON s.product_id = p.product_id;
+JOIN Product p
+ON s.product_id = p.product_id;
 
 -- Pattern: INNER JOIN using foreign key relationship
 -- Key Insight: Sales contains year/price, Product contains name; join by product_id to combine both sources.
